@@ -11,7 +11,7 @@ from settings import APP_ID
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 默认用mysql
-        'NAME': 'dataman',                        # 数据库名 (默认与APP_ID相同)
+        'NAME': 'bkapp',                        # 数据库名 (默认与APP_ID相同)
         'USER': 'root',                        # 你的数据库user
         'PASSWORD': 'heqian#2017',                        # 你的数据库password
         'HOST': '202.120.163.90',                   # 开发的时候，使用localhost

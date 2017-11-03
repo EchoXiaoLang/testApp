@@ -14,6 +14,7 @@
 		    <!--自定义css-->
 		    <link href="${STATIC_URL}css/bk.css?v=${STATIC_VERSION}" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="${STATIC_URL}css/index.css?v=${STATIC_VERSION}">
+      <link rel="stylesheet" href="${STATIC_URL}css/style.css?v=${STATIC_VERSION}"/>
         <!-- 这个是全局配置，如果需要在js中使用app_id和site_url,则这个javascript片段一定要保留 -->
         <script type="text/javascript">
 	    	  var app_id = "${APP_ID}";
@@ -47,6 +48,7 @@
                   <li class="${home}"><a href="${SITE_URL}"><span>首页</span></a></li>
                   <li class="${dev_guide}"><a href="${SITE_URL}dev-guide/"><span>开发指引</span></a></li>
                   <li class="${contactus}"><a href="${SITE_URL}contactus/"><span>联系我们</span></a></li>
+                  <li class="${dev_work}"><a href="${SITE_URL}work/"><span>简历测试</span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <a href="###" class="avatar">
@@ -91,6 +93,8 @@
     <!-- app使用数据统计上报脚本 -->
     <script src="${BK_PLAT_HOST}/console/static/js/analysis.min.js?v=${STATIC_VERSION}" type="text/javascript"></script>
     ${self.body()}
+    <!-- 测试-->
+    <script src="${STATIC_URL}js/resumeJs.js"></script>
     <!-- 兼容性设置 -->
     <!--[if lt IE 6]>\xe8\x93\x9d\xe9\xb2\xb8\xe6\x99\xba\xe8\x90\xa5\x20\xe7\x89\x88\xe6\x9d\x83\xe6\x89\x80\xe6\x9c\x89<![endif]-->
   </body>
